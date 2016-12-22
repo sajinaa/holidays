@@ -1,0 +1,22 @@
+<h3>
+    Enter month to see Holidays list
+</h3>
+
+<md-content>
+    <md-input-container class="container-month-dropdown">
+        <label>Month</label>
+        <md-select ng-model="home.month" ng-change="home.showHolidays()">
+            <md-option ng-repeat="month in home.months" value="{{month}}">{{month}}</md-option>
+        </md-select>
+    </md-input-container>
+
+    <md-list flex>
+        <md-list-item class="md-3-line" ng-repeat="holiday in home.holidays" ui-sref="holidayDetails({name: holiday.name, date: holiday.date, observed: holiday.observed, public: holiday.public})">
+            <div class="md-list-item-text" layout="column">
+                <strong>   {{holiday.name}}                      
+                </strong>
+            </div>
+        </md-list-item>
+    </md-list>
+    <md-divider></md-divider>
+</md-content> 

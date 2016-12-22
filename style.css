@@ -1,0 +1,38 @@
+.links {
+	list-style: none;
+	display : inline-block;
+}
+
+a {
+    text-decoration: none !important;
+	color: firebrick;
+}
+.content
+{
+   background-image: url("Images/angularjsgoogle.png");
+}
+
+.heading 
+{
+	font-size : 25px;    
+}
+
+.md-list-item-text{
+	color: #156ca0;
+}
+
+md-list-item.md-3-line, md-list-item.md-3-line>.md-no-style{
+	min-height: 0;
+}
+.container-month-dropdown{
+	width: 300px;
+}
+md-card{
+	padding: 10px;
+	background-color: #f3f3f3;
+}
+md-card-title-text{
+	color: #156ca0;
+}
+
+	   

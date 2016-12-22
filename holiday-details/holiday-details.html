@@ -1,0 +1,17 @@
+<div>
+    <md-button class="md-primary" ui-sref="home"> &lt; Back </md-button>
+</div>
+
+<md-card>
+    <md-card-title-text>
+        <span class="md-headline" ng-bind="details.params.name"> </span>
+    </md-card-title-text>
+    <md-card-content layout="row" layout-align="space-between">
+        <div>
+            <p>Date : <span ng-bind="details.params.date"> </span></p>
+            <p>Observed : <span ng-bind="details.params.observed"> </span></p>
+            <p>Public Holiday : <span ng-if="details.params.public === 'true'">Yes</span> <span ng-if="details.params.public === 'false'">No</span></p>
+            </ui>
+        </div>
+    </md-card-content>
+</md-card>
